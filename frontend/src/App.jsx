@@ -1,6 +1,6 @@
 import React from 'react'
 import { Routes,Route} from "react-router-dom"
-import Trellomain from './trellomain'
+import Trellomain from './Trellomain'
 import Login from './Login'
 import Signup from './Signup'
 function App() {
