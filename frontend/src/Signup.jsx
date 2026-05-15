@@ -7,7 +7,7 @@ function Signup() {
   const [name, setname] = useState("");
   const [email, setemail] = useState("");
   const [password, setpassword] = useState("");
-  const [gender,setgender] = useState("")
+  // const [gender,setgender] = useState("")
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate()
@@ -15,7 +15,7 @@ function Signup() {
     e.preventDefault();
 
     // validation
-    if (!name || !email || !password ||!gender) {
+    if (!name || !email || !password) {
       setError("Please fill all fields");
       return;
     }
@@ -28,7 +28,6 @@ function Signup() {
         name,
         email,
         password,
-        gender,
       });
 
       alert("Signup Successful 🚀");
@@ -90,7 +89,7 @@ function Signup() {
          
 
 
-
+{/* 
 <div className="flex gap-5">
   <p className="font-semibold">Select Gender:</p>
 
@@ -100,8 +99,8 @@ function Signup() {
       name="gender"
       value="male"
       onChange={(e) => setgender(e.target.value)}
-    />
-    Male
+    /> */}
+    {/* Male
   </label>
 
   <label className="flex items-center gap-2">
@@ -122,9 +121,9 @@ function Signup() {
       onChange={(e) => setgender(e.target.value)}
     />
     Other
-  </label>
+  </label> */}
 
-</div>
+{/* </div> */}
 
        
 

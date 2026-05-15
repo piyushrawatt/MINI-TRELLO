@@ -7,9 +7,9 @@ function App() {
   return (
     <div>
         <Routes>
-           <Route path='/trello' element={<Login/>}/>
+           <Route path='/' element={<Login/>}/>
           <Route path='/signup' element={<Signup/>} />
-          <Route path='/' element={<Trellomain/>} />
+          <Route path='/trello' element={<Trellomain/>} />
             
         </Routes>
 
