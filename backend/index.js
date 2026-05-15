@@ -20,6 +20,9 @@ console.log(process.env.PORT )
     app.listen(Port,()=>{
     console.log(`server is live ,${Port}`)
 })
+app.get("/",(req,res)=>{
+    res.send("hello world")
+})
  })
  .catch((error)=>{
     console.log(error)
