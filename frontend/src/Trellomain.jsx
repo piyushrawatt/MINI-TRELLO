@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from "react";
 import { DragDropContext } from "@hello-pangea/dnd";
-import API from "./api/axios";
+import API from "./API/axios";
 import Column from "./components/Column";
 import { useNavigate } from "react-router-dom";
 
