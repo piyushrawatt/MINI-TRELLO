@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import API from "./api/axios";
+import API from "./API/axios";
 import { useNavigate } from "react-router-dom";
 
 function Login() {
