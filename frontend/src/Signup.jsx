@@ -86,47 +86,7 @@ function Signup() {
             placeholder="Password"
             className="border h-[40px] w-[300px] rounded-2xl text-center"
           />
-         
-
-
-{/* 
-<div className="flex gap-5">
-  <p className="font-semibold">Select Gender:</p>
-
-  <label className="flex items-center gap-2">
-    <input
-      type="radio"
-      name="gender"
-      value="male"
-      onChange={(e) => setgender(e.target.value)}
-    /> */}
-    {/* Male
-  </label>
-
-  <label className="flex items-center gap-2">
-    <input
-      type="radio"
-      name="gender"
-      value="female"
-      onChange={(e) => setgender(e.target.value)}
-    />
-    Female
-  </label>
-
-  <label className="flex items-center gap-2">
-    <input
-      type="radio"
-      name="gender"
-      value="other"
-      onChange={(e) => setgender(e.target.value)}
-    />
-    Other
-  </label> */}
-
-{/* </div> */}
-
-       
-
+  
           <button
             type="submit"
             disabled={loading}

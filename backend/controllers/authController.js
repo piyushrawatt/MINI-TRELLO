@@ -38,7 +38,15 @@ export const login = async (req, res) => {
     await user.save();
 
     // send response
-    res.json({ accessToken, refreshToken });
+res.json({
+  accessToken,
+  refreshToken,
+  user: {
+    _id: user._id,
+    name: user.name,
+    email: user.email
+  }
+});
 
   } catch (err) {
     res.status(500).json({ error: err.message });

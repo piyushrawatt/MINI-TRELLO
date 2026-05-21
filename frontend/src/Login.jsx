@@ -27,7 +27,8 @@ function Login() {
         password,
       });
 
-      localStorage.setItem("token", res.data.accessToken);
+    localStorage.setItem("token", res.data.accessToken)
+localStorage.setItem("userid", res.data.user._id)
 
       alert("Login Successful 🚀");
 

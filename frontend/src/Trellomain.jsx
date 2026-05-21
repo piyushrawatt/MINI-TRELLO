@@ -28,11 +28,13 @@ function Trellomain() {
     if (task.trim() === "") return;
 
     try {
-      const res = await API.post("/task", {
-        task,
-        description: "my task",
-        status: "todo"
-      });
+     const res = await API.post("/task", {
+  task,
+  description: "my task",
+  status: "todo",
+  userid: localStorage.getItem("userid")
+});
+   
 
       setTasks((prev) => [...prev, res.data]);
       setTask("");
