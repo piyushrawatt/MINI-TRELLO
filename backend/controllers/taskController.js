@@ -3,11 +3,12 @@ import Task from "../Schema/schema.js"
 // ➕ Add Task
 export const addTask = async (req, res) => {
   try {
-    const newTask = new Task({
-      task: req.body.task,
-      description: req.body.description,
-      status: req.body.status || "todo"
-    });
+const newTask = new Task({
+  task: req.body.task,
+  description: req.body.description,
+  status: req.body.status || "todo",
+  userid: req.body.userid
+});
 
     await newTask.save();
     res.json(newTask);
